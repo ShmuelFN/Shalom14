@@ -7,5 +7,6 @@ int main(int argc, char *argv[])
     ShalomCalc w;
     w.show();
     //sdfwqwe
+    //papiesz pedofil
     return a.exec();
 }
