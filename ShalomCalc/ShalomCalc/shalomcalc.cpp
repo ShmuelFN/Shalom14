@@ -2,7 +2,7 @@
 #include "ui_shalomcalc.h"
 
 ShalomCalc::ShalomCalc(QWidget *parent) :
-    QMainWindow(parent),
+    QWidget(parent),
     ui(new Ui::ShalomCalc)
 {
     ui->setupUi(this);

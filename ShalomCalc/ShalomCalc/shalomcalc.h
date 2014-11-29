@@ -1,13 +1,13 @@
 #ifndef SHALOMCALC_H
 #define SHALOMCALC_H
 
-#include <QMainWindow>
+#include <QWidget>
 
 namespace Ui {
 class ShalomCalc;
 }
 
-class ShalomCalc : public QMainWindow
+class ShalomCalc : public QWidget
 {
     Q_OBJECT
 
