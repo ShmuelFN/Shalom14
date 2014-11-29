@@ -2,6 +2,11 @@
 #define SHALOMCALC_H
 
 #include <QWidget>
+#include <QPushButton>
+#include <QLabel>
+#include <QMenu>
+#include <QAction>
+#include <QTextCodec>
 
 namespace Ui {
 class ShalomCalc;
