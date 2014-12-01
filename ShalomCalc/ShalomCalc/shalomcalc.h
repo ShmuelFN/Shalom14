@@ -26,13 +26,14 @@ private:
     double a;
 
 public slots:
+    void wyczyscwszystko();
+    void back();
     void dodawanie();
     void odejmowanie();
     void mnozenie();
     void dzielenie();
     void wynik();
     void wyczysc();
-    void wyczysc_wszystko();
     void pB_1c();
     void pB_2c();
     void pB_3c();
