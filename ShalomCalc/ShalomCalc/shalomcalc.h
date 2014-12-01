@@ -22,6 +22,16 @@ public:
 
 private:
     Ui::ShalomCalc *ui;
+    double suma;
+    double a;
+
+public slots:
+    void dodawanie();
+    void odejmowanie();
+    void mnozenie();
+    void dzielenie();
+    void wynik();
+    void wyczysc();
 };
 
 #endif // SHALOMCALC_H
