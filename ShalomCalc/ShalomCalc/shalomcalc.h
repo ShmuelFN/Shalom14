@@ -32,6 +32,7 @@ public slots:
     void dzielenie();
     void wynik();
     void wyczysc();
+    void wyczysc_wszystko();
     void pB_1c();
     void pB_2c();
     void pB_3c();
