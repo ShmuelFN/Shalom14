@@ -21,5 +21,9 @@
         <file>minus.png</file>
         <file>rowna.png</file>
         <file>rowna2.png</file>
+        <file>sinus.png</file>
+        <file>tangens.png</file>
+        <file>cotangens.png</file>
+        <file>cosinus.png</file>
     </qresource>
 </RCC>

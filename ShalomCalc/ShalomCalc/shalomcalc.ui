@@ -173,7 +173,7 @@
       </property>
       <property name="icon">
        <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/rowna.png</normaloff>:/new/prefix1/rowna.png</iconset>
+        <normaloff>:/new/prefix1/rowna2.png</normaloff>:/new/prefix1/rowna2.png</iconset>
       </property>
      </widget>
     </item>
