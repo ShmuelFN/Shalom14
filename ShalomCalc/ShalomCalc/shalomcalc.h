@@ -32,6 +32,17 @@ public slots:
     void dzielenie();
     void wynik();
     void wyczysc();
+    void pB_1c();
+    void pB_2c();
+    void pB_3c();
+    void pB_4c();
+    void pB_5c();
+    void pB_6c();
+    void pB_7c();
+    void pB_8c();
+    void pB_9c();
+    void pB_0c();
+
 };
 
 #endif // SHALOMCALC_H
