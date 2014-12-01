@@ -18,3 +18,6 @@ SOURCES += main.cpp\
 HEADERS  += shalomcalc.h
 
 FORMS    += shalomcalc.ui
+
+RESOURCES += \
+    obrazek.qrc

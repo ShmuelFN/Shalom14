@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>The-Number-1.jpg</file>
+        <file>nummer-9.jpeg</file>
+        <file>nummer-5.jpeg</file>
+        <file>nummer-3.jpeg</file>
+        <file>nummer-2.jpeg</file>
+        <file>kropek.JPG</file>
+        <file>gold-number-8.jpg</file>
+        <file>gold-number-7.jpg</file>
+        <file>gold-number-6.jpg</file>
+        <file>gold-number-4.jpg</file>
+        <file>gold-number-0.jpg</file>
+        <file>ce.jpg</file>
+        <file>backspace-.png</file>
+        <file>c.png</file>
+        <file>podziel.jpeg</file>
+        <file>pomnoz.png</file>
+        <file>plus.png</file>
+        <file>plus2.png</file>
+        <file>minus.png</file>
+        <file>rowna.png</file>
+        <file>rowna2.png</file>
+    </qresource>
+</RCC>
