@@ -25,6 +25,7 @@ private:
     double suma;
     double a;
     char op;
+    bool ulamk;
 
 public slots:
     void wyczyscwszystko();
@@ -45,6 +46,7 @@ public slots:
     void pB_8c();
     void pB_9c();
     void pB_0c();
+    void kropka();
 
 };
 
