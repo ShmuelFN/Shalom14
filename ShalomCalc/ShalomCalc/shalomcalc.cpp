@@ -27,7 +27,8 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
     connect(ui->pB_dz, SIGNAL(clicked()), this, SLOT(dzielenie()));
     connect(ui->pb_wn, SIGNAL(clicked()), this, SLOT(wynik()));
     connect(ui->pB_c, SIGNAL(clicked()), this, SLOT(wyczysc()));
-    connect(ui->pB_ce, SIGNAL(clicked()), this, SLOT(wyczysc_wszystko()));
+    connect(ui->pB_ce, SIGNAL(clicked()), this, SLOT(wyczyscwszystko()));
+    connect(ui->pB_back, SIGNAL(clicked()), this, SLOT(back()));
 }
 
 ShalomCalc::~ShalomCalc()
@@ -37,7 +38,7 @@ ShalomCalc::~ShalomCalc()
 
 void ShalomCalc::dodawanie()
 {
-
+ui->lineEdit->backspace();
 
 
 }
@@ -62,7 +63,11 @@ void ShalomCalc::wyczysc()
 {
 
 }
-void ShalomCalc::wyczysc_wszystko(){
+void ShalomCalc::wyczyscwszystko(){
+
+}
+void ShalomCalc::back(){
+    ui->lineEdit->backspace();
 
 }
 
