@@ -7,7 +7,9 @@
 #include <QMenu>
 #include <QAction>
 #include <QTextCodec>
-
+#include<math.h>
+#include<cmath>
+#include<inttypes.h>
 namespace Ui {
 class ShalomCalc;
 }
@@ -24,8 +26,10 @@ private:
     Ui::ShalomCalc *ui;
     double suma;
     double a;
+    double g;
     char op;
     bool ulamk;
+    //bool t;
 
 public slots:
     void wyczyscwszystko();
@@ -47,6 +51,26 @@ public slots:
     void pB_9c();
     void pB_0c();
     void kropka();
+    void pi();
+    void e();
+    void e_x();
+    //sloty trygonometryczne
+    void sinus_angles();
+    void sinus_rad();
+    void cosinus_angles();
+    void cosinus_rad();
+    void tangens_angles();
+    void tangens_rad();
+   //sloty funkcyjne
+    void silnia();
+    void logarytm_10();
+    void ln();
+    void pierwiastek();
+    void pierwiastek_stopnia_trzeciego();
+    void kwadrat();
+    //sloty ciekawe
+  // void prime();
+
 
 };
 
