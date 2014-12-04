@@ -1,6 +1,8 @@
 #include "shalomcalc.h"
 #include "ui_shalomcalc.h"
 #include <QString>
+#include<cstdlib>
+//#include<QtCore/QtMath>
 ShalomCalc::ShalomCalc(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ShalomCalc)
@@ -14,6 +16,7 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
     op = 'n';
     ulamk = false;
     ui->lineEdit->setText("0");
+
     connect(ui->pB_1, SIGNAL(clicked()), this, SLOT(pB_1c()));
     connect(ui->pB_2, SIGNAL(clicked()), this, SLOT(pB_2c()));
     connect(ui->pB_3, SIGNAL(clicked()), this, SLOT(pB_3c()));
@@ -33,12 +36,153 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
     connect(ui->pB_ce, SIGNAL(clicked()), this, SLOT(wyczyscwszystko()));
     connect(ui->pB_back, SIGNAL(clicked()), this, SLOT(back()));
     connect(ui->pB_pp, SIGNAL(clicked()), this , SLOT(kropka()));
+    connect(ui->pB_sin, SIGNAL(clicked()), this , SLOT(sinus_angles()));
+    connect(ui->pB_sinrad, SIGNAL(clicked()), this , SLOT(sinus_rad()));
+    connect(ui->pB_cos, SIGNAL(clicked()), this , SLOT(cosinus_angles()));
+    connect(ui->pB_cosrad, SIGNAL(clicked()), this , SLOT(cosinus_rad()));
+   connect(ui->pB_tan, SIGNAL(clicked()), this , SLOT(tangens_angles()));
+   connect(ui->pB_tanrad, SIGNAL(clicked()), this , SLOT(tangens_rad()));
+   connect(ui->pB_silnia, SIGNAL(clicked()), this , SLOT(silnia()));
+   connect(ui->pB_log10, SIGNAL(clicked()), this , SLOT(logarytm_10()));
+   connect(ui->pB_ln, SIGNAL(clicked()), this , SLOT(ln()));//logarytm naturalny
+   connect(ui->pB_pierw, SIGNAL(clicked()), this , SLOT(pierwiastek()));
+   connect(ui->pB_pierw_st_3, SIGNAL(clicked()), this , SLOT(pierwiastek_stopnia_trzeciego()));
+   connect(ui->pB_kwadrat, SIGNAL(clicked()), this , SLOT(kwadrat()));
+   //connect(ui->pB_prime, SIGNAL(clicked()), this , SLOT(prime()));
+   connect(ui->pB_pi, SIGNAL(clicked()), this , SLOT(pi()));
+   connect(ui->pB_e, SIGNAL(clicked()), this , SLOT(e()));
+   connect(ui->pB_e_x, SIGNAL(clicked()), this , SLOT(e_x()));
+
+
+
+
 }
 
 ShalomCalc::~ShalomCalc()
 {
     delete ui;
+
 }
+
+void ShalomCalc::silnia(){
+    a=ui->lineEdit->text().toDouble();
+    //int s;
+        long long silnia = 1;
+
+       // cout << "podaj liczbe" << endl;
+       // cin >> s;
+
+        for (int i = 1; i<=a;i++)
+           {
+
+            silnia *= i;
+        }
+
+       ui->lineEdit->setText(QString::number(silnia));
+
+}
+void ShalomCalc::logarytm_10(){
+   a=ui->lineEdit->text().toDouble();
+   if(a>0){
+     double l=log10(a);
+      ui->lineEdit->setText(QString::number(l));
+
+}
+}
+void ShalomCalc::ln(){
+
+    a=ui->lineEdit->text().toDouble();
+
+      double l=log(a);
+       ui->lineEdit->setText(QString::number(l));
+
+
+}
+void ShalomCalc::pierwiastek(){
+    a=ui->lineEdit->text().toDouble();
+    double p=sqrt(a);
+    ui->lineEdit->setText(QString::number(p));
+
+}
+void ShalomCalc::pierwiastek_stopnia_trzeciego(){
+    a=ui->lineEdit->text().toDouble();
+    double wynik = pow( a,( 1 / 3.0 ) );
+    ui->lineEdit->setText(QString::number(wynik));
+}
+void ShalomCalc::kwadrat(){
+    a=ui->lineEdit->text().toDouble();
+    double wynik = pow( a,( 2.0 ) );
+    ui->lineEdit->setText(QString::number(wynik));
+}
+/*void ShalomCalc::prime(){
+
+  double n;
+   int lp,p,d;
+
+n=ui->lineEdit->text().toDouble();
+  lp = 0;
+  p  = 2;
+  while(lp < n)
+  {
+    t = true;
+    for(d = 2; d < p; d++)
+      if(p % d == 0)
+      {
+        t = false;
+        break;
+      }
+    if(t)
+    {
+       ui->lineEdit->setText(QString::number(p));
+      lp++;
+    }
+    p++;
+    //return 0;
+
+  }*/
+
+void ShalomCalc:: sinus_angles(){
+
+     a=ui->lineEdit->text().toDouble();
+     a=a/180*(3.14159);
+     //ui->lineEdit->clear();
+      double x=sin(a);
+    ui->lineEdit->setText(QString::number(x));
+
+}
+void ShalomCalc:: sinus_rad(){
+    a=ui->lineEdit->text().toDouble();
+
+    //ui->lineEdit->clear();
+     double x=sin(a);
+   ui->lineEdit->setText(QString::number(x));
+}
+void ShalomCalc::cosinus_angles(){
+     a=ui->lineEdit->text().toDouble();
+     a=a/180*(3.14159);
+     double y=cos(a);
+     ui->lineEdit->setText(QString::number(y));
+
+}
+void ShalomCalc::cosinus_rad(){
+
+    a=ui->lineEdit->text().toDouble();
+    double y=cos(a);
+    ui->lineEdit->setText(QString::number(y));
+}
+void ShalomCalc::tangens_angles(){
+    a=ui->lineEdit->text().toDouble();
+   a=a/180*(3.14159);
+   double t=tan(a);
+   ui->lineEdit->setText(QString::number(t));
+   }
+
+void ShalomCalc::tangens_rad(){
+    a=ui->lineEdit->text().toDouble();
+ double t=tan(a);
+   ui->lineEdit->setText(QString::number(t));
+}
+
 
 void ShalomCalc::dodawanie()
 {
@@ -126,6 +270,7 @@ void ShalomCalc::back(){
 void ShalomCalc::pB_1c(){
     if(ui->lineEdit->text()=="0"){
         ui->lineEdit->setText("1");
+
         }
     else if(ui->lineEdit->text()!="0"){
         ui->lineEdit->setText(ui->lineEdit->text() + "1");
@@ -135,6 +280,7 @@ void ShalomCalc::pB_1c(){
 void ShalomCalc::pB_2c(){
     if(ui->lineEdit->text()=="0"){
         ui->lineEdit->setText("2");
+
         }
     else if(ui->lineEdit->text()!="0"){
         ui->lineEdit->setText(ui->lineEdit->text() + "2");
@@ -213,4 +359,16 @@ void ShalomCalc::pB_0c(){
         ui->lineEdit->setText(ui->lineEdit->text() + "0");
     }
 
+}
+void ShalomCalc::pi(){
+     ui->lineEdit->setText("3.14159");
+}
+void ShalomCalc::e(){
+    ui->lineEdit->setText("2.718281828459045");
+}
+void ShalomCalc::e_x(){
+    double x=ui->lineEdit->text().toDouble();
+    //double e=2.718281828459045;
+    double wynik =pow(2.718281828459045,x);
+    ui->lineEdit->setText(QString::number(wynik));
 }
