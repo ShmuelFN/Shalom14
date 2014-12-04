@@ -24,6 +24,7 @@ private:
     Ui::ShalomCalc *ui;
     double suma;
     double a;
+    char op;
 
 public slots:
     void wyczyscwszystko();

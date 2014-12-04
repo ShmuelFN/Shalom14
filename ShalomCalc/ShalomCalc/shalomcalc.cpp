@@ -1,6 +1,6 @@
 #include "shalomcalc.h"
 #include "ui_shalomcalc.h"
-
+#include <QString>
 ShalomCalc::ShalomCalc(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ShalomCalc)
@@ -11,6 +11,7 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
     //ui->lineEdit->setText("0");
 
     ui->setupUi(this);
+    op = 'n';
     connect(ui->pB_1, SIGNAL(clicked()), this, SLOT(pB_1c()));
     connect(ui->pB_2, SIGNAL(clicked()), this, SLOT(pB_2c()));
     connect(ui->pB_3, SIGNAL(clicked()), this, SLOT(pB_3c()));
@@ -38,32 +39,59 @@ ShalomCalc::~ShalomCalc()
 
 void ShalomCalc::dodawanie()
 {
-ui->lineEdit->backspace();
 
-
+    a = ui->lineEdit->text().toDouble();
+    ui->lineEdit->clear();
+    op = 'd';
 }
 void ShalomCalc::odejmowanie()
 {
-
+    a = ui->lineEdit->text().toDouble();
+    ui->lineEdit->clear();
+    op = 'o';
 
 }
 void ShalomCalc::mnozenie()
 {
-
+    a = ui->lineEdit->text().toDouble();
+    ui->lineEdit->clear();
+    op = 'm';
 }
 void ShalomCalc::dzielenie()
 {
-
+    a = ui->lineEdit->text().toDouble();
+    ui->lineEdit->clear();
+    op = 'z';
 }
 void ShalomCalc::wynik()
 {
+    if(op == 'd'){
+    a = a + ui->lineEdit->text().toDouble();
+   }
+    else if(op == 'o'){
+    a = a - ui->lineEdit->text().toDouble();
+    }
+    else if(op == 'm'){
+    a = a * ui->lineEdit->text().toDouble();
+    }
+    else if(op == 'z'){
+    a = a / ui->lineEdit->text().toDouble();
+    }
+
+
+    ui->lineEdit->setText(QString::number(a));
 
 }
 void ShalomCalc::wyczysc()
 {
+   ui->lineEdit->setText("");
 
 }
 void ShalomCalc::wyczyscwszystko(){
+    ui->lineEdit->setText("");
+    a = 0;
+    op = 'n';
+
 
 }
 void ShalomCalc::back(){
