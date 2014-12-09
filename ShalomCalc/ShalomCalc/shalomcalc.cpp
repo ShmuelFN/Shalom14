@@ -42,6 +42,8 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
     connect(ui->pB_cosrad, SIGNAL(clicked()), this , SLOT(cosinus_rad()));
    connect(ui->pB_tan, SIGNAL(clicked()), this , SLOT(tangens_angles()));
    connect(ui->pB_tanrad, SIGNAL(clicked()), this , SLOT(tangens_rad()));
+   connect(ui->pB_asin, SIGNAL(clicked()), this , SLOT(arcus_sinus()));
+   connect(ui->pB_acos, SIGNAL(clicked()), this , SLOT(arcus_cosinus()));
    connect(ui->pB_silnia, SIGNAL(clicked()), this , SLOT(silnia()));
    connect(ui->pB_log10, SIGNAL(clicked()), this , SLOT(logarytm_10()));
    connect(ui->pB_ln, SIGNAL(clicked()), this , SLOT(ln()));//logarytm naturalny
@@ -52,6 +54,11 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
    connect(ui->pB_pi, SIGNAL(clicked()), this , SLOT(pi()));
    connect(ui->pB_e, SIGNAL(clicked()), this , SLOT(e()));
    connect(ui->pB_e_x, SIGNAL(clicked()), this , SLOT(e_x()));
+   connect(ui->pB_cm_m, SIGNAL(clicked()), this , SLOT(cm_m()));
+   connect(ui->pB_m_cm, SIGNAL(clicked()), this , SLOT(m_cm()));
+   connect(ui->pB_cm_3_dm_3, SIGNAL(clicked()), this , SLOT(cm_3_dm_3()));
+   connect(ui->pB_dm_3_cm_3, SIGNAL(clicked()), this , SLOT(dm_3_cm_3()));
+
 
 
 
@@ -181,6 +188,20 @@ void ShalomCalc::tangens_rad(){
     a=ui->lineEdit->text().toDouble();
  double t=tan(a);
    ui->lineEdit->setText(QString::number(t));
+}
+void ShalomCalc::arcus_sinus(){
+  a=ui->lineEdit->text().toDouble();
+ double x=asin(a);
+ x/=3.14159;
+ x*=180;
+ ui->lineEdit->setText(QString::number(x));
+}
+void ShalomCalc::arcus_cosinus(){
+  a=ui->lineEdit->text().toDouble();
+ double x=acos(a);
+ x/=3.14159;
+ x*=180;
+ ui->lineEdit->setText(QString::number(x));
 }
 
 
@@ -371,4 +392,36 @@ void ShalomCalc::e_x(){
     //double e=2.718281828459045;
     double wynik =pow(2.718281828459045,x);
     ui->lineEdit->setText(QString::number(wynik));
+}
+//zamiana jednostek
+void ShalomCalc::cm_m(){
+    a=ui->lineEdit->text().toDouble();
+    a/=100;
+
+   ui->lineEdit->setText(QString::number(a));
+  }
+void ShalomCalc::m_cm(){
+
+    a=ui->lineEdit->text().toDouble();
+    a*=100;
+
+   ui->lineEdit->setText(QString::number(a));
+
+}
+
+void ShalomCalc::dm_3_cm_3(){
+
+    a=ui->lineEdit->text().toDouble();
+    a*=1000;
+
+   ui->lineEdit->setText(QString::number(a));
+
+}
+void ShalomCalc::cm_3_dm_3(){
+
+    a=ui->lineEdit->text().toDouble();
+    a/=1000;
+
+   ui->lineEdit->setText(QString::number(a));
+
 }

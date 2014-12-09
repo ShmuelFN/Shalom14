@@ -61,6 +61,9 @@ public slots:
     void cosinus_rad();
     void tangens_angles();
     void tangens_rad();
+    //sloty cyklometrytryczne
+    void arcus_sinus();
+    void arcus_cosinus();
    //sloty funkcyjne
     void silnia();
     void logarytm_10();
@@ -68,6 +71,11 @@ public slots:
     void pierwiastek();
     void pierwiastek_stopnia_trzeciego();
     void kwadrat();
+    //zamiana jednostek
+    void cm_m();//zamienia cm na metry
+    void m_cm();//zamienia metry na centymetry
+    void dm_3_cm_3();
+    void cm_3_dm_3();
     //sloty ciekawe
   // void prime();
 
