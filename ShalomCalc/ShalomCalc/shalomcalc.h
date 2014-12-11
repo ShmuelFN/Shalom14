@@ -64,6 +64,7 @@ public slots:
     //sloty cyklometrytryczne
     void arcus_sinus();
     void arcus_cosinus();
+    void arcus_tangens();
    //sloty funkcyjne
     void silnia();
     void logarytm_10();

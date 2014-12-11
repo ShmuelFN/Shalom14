@@ -2,6 +2,7 @@
 #include "ui_shalomcalc.h"
 #include <QString>
 #include<cstdlib>
+#include<cstring>
 //#include<QtCore/QtMath>
 ShalomCalc::ShalomCalc(QWidget *parent) :
     QWidget(parent),
@@ -44,6 +45,7 @@ ShalomCalc::ShalomCalc(QWidget *parent) :
    connect(ui->pB_tanrad, SIGNAL(clicked()), this , SLOT(tangens_rad()));
    connect(ui->pB_asin, SIGNAL(clicked()), this , SLOT(arcus_sinus()));
    connect(ui->pB_acos, SIGNAL(clicked()), this , SLOT(arcus_cosinus()));
+   connect(ui->pB_arc_tg, SIGNAL(clicked()), this , SLOT(arcus_tangens()));
    connect(ui->pB_silnia, SIGNAL(clicked()), this , SLOT(silnia()));
    connect(ui->pB_log10, SIGNAL(clicked()), this , SLOT(logarytm_10()));
    connect(ui->pB_ln, SIGNAL(clicked()), this , SLOT(ln()));//logarytm naturalny
@@ -73,11 +75,8 @@ ShalomCalc::~ShalomCalc()
 
 void ShalomCalc::silnia(){
     a=ui->lineEdit->text().toDouble();
-    //int s;
+if(a<66){
         unsigned long long silnia = 1;
-
-       // cout << "podaj liczbe" << endl;
-       // cin >> s;
 
         for (int i = 1; i<=a;i++)
            {
@@ -86,6 +85,10 @@ void ShalomCalc::silnia(){
         }
 
        ui->lineEdit->setText(QString::number(silnia));
+}
+else if(a>66){
+     ui->lineEdit->setText("Zbyt wielka liczba.Argument silni>=66");
+}
 
 }
 void ShalomCalc::logarytm_10(){
@@ -93,22 +96,29 @@ void ShalomCalc::logarytm_10(){
    if(a>0){
      double l=log10(a);
       ui->lineEdit->setText(QString::number(l));
+   }
+      else if(a<0) ui->lineEdit->setText("Logarytm dziesiętny nie przyjmuje wartości mniejszych bądź równych 0");
 
 }
-}
+
 void ShalomCalc::ln(){
 
     a=ui->lineEdit->text().toDouble();
-
+    if(a>0){
       double l=log(a);
        ui->lineEdit->setText(QString::number(l));
+    }
+    else if(a<0)ui->lineEdit->setText("Logarytm naturalny nie przyjmuje wartości mniejszych bądź równych 0");
 
 
 }
 void ShalomCalc::pierwiastek(){
     a=ui->lineEdit->text().toDouble();
+    if(a>=0){
     double p=sqrt(a);
     ui->lineEdit->setText(QString::number(p));
+    }
+    else if (a<0) ui->lineEdit->setText("Pierwiastek z ujemnej liczby nie istnieje.");
 
 }
 void ShalomCalc::pierwiastek_stopnia_trzeciego(){
@@ -121,32 +131,7 @@ void ShalomCalc::kwadrat(){
     double wynik = pow( a,( 2.0 ) );
     ui->lineEdit->setText(QString::number(wynik));
 }
-/*void ShalomCalc::prime(){
 
-  double n;
-   int lp,p,d;
-
-n=ui->lineEdit->text().toDouble();
-  lp = 0;
-  p  = 2;
-  while(lp < n)
-  {
-    t = true;
-    for(d = 2; d < p; d++)
-      if(p % d == 0)
-      {
-        t = false;
-        break;
-      }
-    if(t)
-    {
-       ui->lineEdit->setText(QString::number(p));
-      lp++;
-    }
-    p++;
-    //return 0;
-
-  }*/
 
 void ShalomCalc:: sinus_angles(){
 
@@ -179,32 +164,59 @@ void ShalomCalc::cosinus_rad(){
     ui->lineEdit->setText(QString::number(y));
 }
 void ShalomCalc::tangens_angles(){
-    a=ui->lineEdit->text().toDouble();
-   a=a/180*(3.14159);
-   double t=tan(a);
-   ui->lineEdit->setText(QString::number(t));
+   int d=ui->lineEdit->text().toInt();
+   double s=ui->lineEdit->text().toDouble();
+   if(d%90==0 && d%180==90 )
+    {
+       ui->lineEdit->setText("Asymptota");
    }
+
+   else
+   {
+    s/=180;
+   s*=3.14159265359;
+   double t=tan(s);
+   ui->lineEdit->setText(QString::number(t));
+    }
+}
 
 void ShalomCalc::tangens_rad(){
     a=ui->lineEdit->text().toDouble();
- double t=tan(a);
+   // double d=ui->lineEdit->text().toDouble();
+    a/=3.14159265359;
+    int b=a*180;
+    if(b%90==0  && (b%180==90 || b==90)){
+        ui->lineEdit->setText("Asymptota");
+    }
+    else
+    {
+        a*=3.14159265359;
+        a/=180;
+        double t=tan(a);
    ui->lineEdit->setText(QString::number(t));
+    }
 }
 void ShalomCalc::arcus_sinus(){
   a=ui->lineEdit->text().toDouble();
  double x=asin(a);
- x/=3.14159;
+ x/=3.14159265359;
  x*=180;
  ui->lineEdit->setText(QString::number(x));
 }
 void ShalomCalc::arcus_cosinus(){
   a=ui->lineEdit->text().toDouble();
  double x=acos(a);
- x/=3.14159;
+ x/=3.14159265359;
  x*=180;
  ui->lineEdit->setText(QString::number(x));
 }
-
+void ShalomCalc::arcus_tangens(){
+ a=ui->lineEdit->text().toDouble();
+    double x=atan(a);
+    x/=3.14159265359;
+    x*=180;
+    ui->lineEdit->setText(QString::number(x));
+}
 
 void ShalomCalc::dodawanie()
 {
