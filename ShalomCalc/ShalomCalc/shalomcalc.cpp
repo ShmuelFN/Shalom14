@@ -74,7 +74,7 @@ ShalomCalc::~ShalomCalc()
 void ShalomCalc::silnia(){
     a=ui->lineEdit->text().toDouble();
     //int s;
-        long long silnia = 1;
+        unsigned long long silnia = 1;
 
        // cout << "podaj liczbe" << endl;
        // cin >> s;
@@ -382,7 +382,12 @@ void ShalomCalc::pB_0c(){
 
 }
 void ShalomCalc::pi(){
-     ui->lineEdit->setText("3.14159");
+   a=ui->lineEdit->text().toDouble();
+    double pi=3.14159265359;
+    a*=pi;
+    ui->lineEdit->setText(QString::number(a));
+ ulamk=true;
+
 }
 void ShalomCalc::e(){
     ui->lineEdit->setText("2.718281828459045");

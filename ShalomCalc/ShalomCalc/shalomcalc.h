@@ -74,7 +74,7 @@ public slots:
     //zamiana jednostek
     void cm_m();//zamienia cm na metry
     void m_cm();//zamienia metry na centymetry
-    void dm_3_cm_3();
+    void dm_3_cm_3();//zamienia
     void cm_3_dm_3();
     //sloty ciekawe
   // void prime();
