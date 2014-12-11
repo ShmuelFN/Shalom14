@@ -156,6 +156,7 @@ void ShalomCalc:: sinus_angles(){
       double x=sin(a);
     ui->lineEdit->setText(QString::number(x));
 
+
 }
 void ShalomCalc:: sinus_rad(){
     a=ui->lineEdit->text().toDouble();
@@ -390,7 +391,14 @@ void ShalomCalc::pi(){
 
 }
 void ShalomCalc::e(){
-    ui->lineEdit->setText("2.718281828459045");
+    a=ui->lineEdit->text().toDouble();
+     double e=2.718281828459045;
+     a*=e;
+     ui->lineEdit->setText(QString::number(a));
+  ulamk=true;
+
+
+
 }
 void ShalomCalc::e_x(){
     double x=ui->lineEdit->text().toDouble();

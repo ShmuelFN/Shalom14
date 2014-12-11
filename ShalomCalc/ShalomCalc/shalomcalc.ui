@@ -193,7 +193,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="icon">
        <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/pomnoz.png</normaloff>:/new/prefix1/pomnoz.png</iconset>
+        <normaloff>:/new/prefix1/gwiazda.jpeg</normaloff>:/new/prefix1/gwiazda.jpeg</iconset>
       </property>
      </widget>
     </item>
