@@ -65,197 +65,31 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="5" column="1">
-     <widget class="QPushButton" name="pB_pp">
+    <item row="6" column="6">
+     <widget class="QPushButton" name="pB_asin">
       <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/kropek.JPG</normaloff>:/new/prefix1/kropek.JPG</iconset>
+       <string>arcus sinus</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="0">
-     <widget class="QPushButton" name="pB_0">
+    <item row="7" column="5">
+     <widget class="QPushButton" name="pB_cm_3_dm_3">
       <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/gold-number-0.jpg</normaloff>:/new/prefix1/gold-number-0.jpg</iconset>
+       <string>cm^3-dm^3</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="5">
-     <widget class="QPushButton" name="pB_cos">
+    <item row="7" column="4">
+     <widget class="QPushButton" name="pB_m_cm">
       <property name="text">
-       <string> stopnie</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/cosinus.png</normaloff>:/new/prefix1/cosinus.png</iconset>
+       <string>m-cm</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="6">
-     <widget class="QPushButton" name="pB_sinrad">
+    <item row="6" column="5">
+     <widget class="QPushButton" name="pB_dm_3_cm_3">
       <property name="text">
-       <string> rad</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/sinus.png</normaloff>:/new/prefix1/sinus.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="5">
-     <widget class="QPushButton" name="pB_tan">
-      <property name="text">
-       <string>stopnie</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/tangens.png</normaloff>:/new/prefix1/tangens.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="6">
-     <widget class="QPushButton" name="pB_tanrad">
-      <property name="text">
-       <string> rad</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/tangens.png</normaloff>:/new/prefix1/tangens.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="5">
-     <widget class="QPushButton" name="pB_sin">
-      <property name="text">
-       <string>stopnie</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/sinus.png</normaloff>:/new/prefix1/sinus.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="6">
-     <widget class="QPushButton" name="pB_cosrad">
-      <property name="text">
-       <string> rad</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/cosinus.png</normaloff>:/new/prefix1/cosinus.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="pB_2">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/nummer-2.jpeg</normaloff>:/new/prefix1/nummer-2.jpeg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="4">
-     <widget class="QPushButton" name="pB_od">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/minus.png</normaloff>:/new/prefix1/minus.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="7">
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>x^3</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/x_3.png</normaloff>:/new/prefix1/x_3.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="4">
-     <widget class="QPushButton" name="pB_mn">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/gwiazda.jpeg</normaloff>:/new/prefix1/gwiazda.jpeg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QPushButton" name="pB_5">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/nummer-5.jpeg</normaloff>:/new/prefix1/nummer-5.jpeg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QPushButton" name="pB_1">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/The-Number-1.jpg</normaloff>:/new/prefix1/The-Number-1.jpg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="7">
-     <widget class="QPushButton" name="pB_kwadrat">
-      <property name="text">
-       <string>x^2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QPushButton" name="pB_8">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/gold-number-8.jpg</normaloff>:/new/prefix1/gold-number-8.jpg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3">
-     <widget class="QPushButton" name="pB_6">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/gold-number-6.jpg</normaloff>:/new/prefix1/gold-number-6.jpg</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="3">
-     <widget class="QPushButton" name="pB_9">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/nummer-9.jpeg</normaloff>:/new/prefix1/nummer-9.jpeg</iconset>
+       <string>dm^3-cm^3</string>
       </property>
      </widget>
     </item>
@@ -281,6 +115,50 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="pB_6">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/gold-number-6.jpg</normaloff>:/new/prefix1/gold-number-6.jpg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pB_9">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/nummer-9.jpeg</normaloff>:/new/prefix1/nummer-9.jpeg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pB_8">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/gold-number-8.jpg</normaloff>:/new/prefix1/gold-number-8.jpg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="pB_do">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/plus2.png</normaloff>:/new/prefix1/plus2.png</iconset>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QPushButton" name="pB_ce">
       <property name="text">
@@ -303,14 +181,21 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
-    <item row="3" column="4">
-     <widget class="QPushButton" name="pB_do">
+    <item row="4" column="5">
+     <widget class="QPushButton" name="pB_log10">
       <property name="text">
-       <string/>
+       <string>log dziesiętny</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QPushButton" name="pB_pierw">
+      <property name="text">
+       <string>pierwiastek</string>
       </property>
       <property name="icon">
        <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/plus2.png</normaloff>:/new/prefix1/plus2.png</iconset>
+        <normaloff>:/new/prefix1/sqrt.png</normaloff>:/new/prefix1/sqrt.png</iconset>
       </property>
      </widget>
     </item>
@@ -336,13 +221,6 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
-    <item row="4" column="5">
-     <widget class="QPushButton" name="pB_log10">
-      <property name="text">
-       <string>log dziesiętny</string>
-      </property>
-     </widget>
-    </item>
     <item row="5" column="6">
      <widget class="QPushButton" name="pB_pierw_st_3">
       <property name="text">
@@ -351,17 +229,6 @@ p, li { white-space: pre-wrap; }
       <property name="icon">
        <iconset resource="obrazek.qrc">
         <normaloff>:/new/prefix1/sqrt_3.png</normaloff>:/new/prefix1/sqrt_3.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="5">
-     <widget class="QPushButton" name="pB_pierw">
-      <property name="text">
-       <string>pierwiastek</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/sqrt.png</normaloff>:/new/prefix1/sqrt.png</iconset>
       </property>
      </widget>
     </item>
@@ -379,14 +246,14 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
-    <item row="5" column="3">
-     <widget class="QPushButton" name="pb_wn">
+    <item row="3" column="7">
+     <widget class="QPushButton" name="pB_e_x">
       <property name="text">
-       <string/>
+       <string>e^x</string>
       </property>
       <property name="icon">
        <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/rowna2.png</normaloff>:/new/prefix1/rowna2.png</iconset>
+        <normaloff>:/new/prefix1/ex.jpg</normaloff>:/new/prefix1/ex.jpg</iconset>
       </property>
      </widget>
     </item>
@@ -401,6 +268,17 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
+    <item row="5" column="3">
+     <widget class="QPushButton" name="pb_wn">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/rowna2.png</normaloff>:/new/prefix1/rowna2.png</iconset>
+      </property>
+     </widget>
+    </item>
     <item row="2" column="7">
      <widget class="QPushButton" name="pB_e">
       <property name="text">
@@ -412,14 +290,10 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
-    <item row="3" column="7">
-     <widget class="QPushButton" name="pB_e_x">
+    <item row="6" column="7">
+     <widget class="QPushButton" name="pB_acos">
       <property name="text">
-       <string>e^x</string>
-      </property>
-      <property name="icon">
-       <iconset resource="obrazek.qrc">
-        <normaloff>:/new/prefix1/ex.jpg</normaloff>:/new/prefix1/ex.jpg</iconset>
+       <string>arc cos</string>
       </property>
      </widget>
     </item>
@@ -441,38 +315,171 @@ p, li { white-space: pre-wrap; }
       </property>
      </widget>
     </item>
-    <item row="6" column="7">
-     <widget class="QPushButton" name="pB_acos">
+    <item row="4" column="7">
+     <widget class="QPushButton" name="pushButton">
       <property name="text">
-       <string>arc cos</string>
+       <string>x^3</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/x_3.png</normaloff>:/new/prefix1/x_3.png</iconset>
       </property>
      </widget>
     </item>
-    <item row="6" column="6">
-     <widget class="QPushButton" name="pB_asin">
+    <item row="2" column="4">
+     <widget class="QPushButton" name="pB_mn">
       <property name="text">
-       <string>arcus sinus</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/gwiazda.jpeg</normaloff>:/new/prefix1/gwiazda.jpeg</iconset>
       </property>
      </widget>
     </item>
-    <item row="6" column="5">
-     <widget class="QPushButton" name="pB_dm_3_cm_3">
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pB_2">
       <property name="text">
-       <string>dm^3-cm^3</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/nummer-2.jpeg</normaloff>:/new/prefix1/nummer-2.jpeg</iconset>
       </property>
      </widget>
     </item>
-    <item row="7" column="5">
-     <widget class="QPushButton" name="pB_cm_3_dm_3">
+    <item row="3" column="1">
+     <widget class="QPushButton" name="pB_5">
       <property name="text">
-       <string>cm^3-dm^3</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/nummer-5.jpeg</normaloff>:/new/prefix1/nummer-5.jpeg</iconset>
       </property>
      </widget>
     </item>
-    <item row="7" column="4">
-     <widget class="QPushButton" name="pB_m_cm">
+    <item row="4" column="4">
+     <widget class="QPushButton" name="pB_od">
       <property name="text">
-       <string>m-cm</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/minus.png</normaloff>:/new/prefix1/minus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="QPushButton" name="pB_kwadrat">
+      <property name="text">
+       <string>x^2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="pB_1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/The-Number-1.jpg</normaloff>:/new/prefix1/The-Number-1.jpg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="QPushButton" name="pB_arc_tg">
+      <property name="text">
+       <string>arcus tangens</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="pB_cos">
+      <property name="text">
+       <string> stopnie</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/cosinus.png</normaloff>:/new/prefix1/cosinus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="pB_0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/gold-number-0.jpg</normaloff>:/new/prefix1/gold-number-0.jpg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="QPushButton" name="pB_sinrad">
+      <property name="text">
+       <string> rad</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/sinus.png</normaloff>:/new/prefix1/sinus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="pB_pp">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/kropek.JPG</normaloff>:/new/prefix1/kropek.JPG</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QPushButton" name="pB_sin">
+      <property name="text">
+       <string>stopnie</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/sinus.png</normaloff>:/new/prefix1/sinus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QPushButton" name="pB_tan">
+      <property name="text">
+       <string>stopnie</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/tangens.png</normaloff>:/new/prefix1/tangens.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="pB_cosrad">
+      <property name="text">
+       <string> rad</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/cosinus.png</normaloff>:/new/prefix1/cosinus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QPushButton" name="pB_tanrad">
+      <property name="text">
+       <string> rad</string>
+      </property>
+      <property name="icon">
+       <iconset resource="obrazek.qrc">
+        <normaloff>:/new/prefix1/tangens.png</normaloff>:/new/prefix1/tangens.png</iconset>
       </property>
      </widget>
     </item>
